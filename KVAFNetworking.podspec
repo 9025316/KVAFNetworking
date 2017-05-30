@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KVAFNetworking'
-  s.version          = '0.0.1'
-  s.summary          = 'This is a Object-c Categorg kit library.'
+  s.version          = '0.0.2'
+  s.summary          = 'This is a based on network request afnetworking 3.0 encapsulation.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,14 +25,14 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '韩问' => '9025316@qq.com' }
-  s.source           = { :git => 'https://github.com/9025316/KVAFNetworking.git', :tag => '0.0.1' }
+  s.source           = { :git => 'https://github.com/9025316/KVAFNetworking.git', :tag => '0.0.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
 
   s.source_files = '*'
   s.public_header_files = 'KVAFHeader.h'
-  s.source_files = 'KVAFHeader.h'
+  # s.source_files = 'KVAFHeader.h'
   
   # s.resource_bundles = {
   #   'KVKit' => ['KVKit/Assets/*.png']

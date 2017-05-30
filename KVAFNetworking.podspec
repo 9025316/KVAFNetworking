@@ -30,7 +30,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'KVAFNetworking/*'
+  s.source_files = '*'
+  s.public_header_files = 'KVAFHeader.h'
+  s.source_files = 'KVAFHeader.h'
   
   # s.resource_bundles = {
   #   'KVKit' => ['KVKit/Assets/*.png']
@@ -38,5 +40,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 3.0'
+  # s.dependency 'AFNetworking', '~> 3.0'
 end

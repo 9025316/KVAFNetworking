@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KVAFNetworking'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'This is a based on network request.'
 
 # This description is used to generate tags and improve search results.
@@ -25,20 +25,22 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '韩问' => '9025316@qq.com' }
-  s.source           = { :git => 'https://github.com/9025316/KVAFNetworking.git', :tag => '1.0.0' }
+  s.source           = { :git => 'https://github.com/9025316/KVAFNetworking.git', :tag => '1.0.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'KVAFNetworking/*'
-  s.public_header_files = 'KVAFNetworking/KVAFHeader.h'
-  s.source_files = 'KVAFNetworking/KVAFHeader.h'
+  s.requires_arc = true  
+  
+  s.source_files = "KVAFNetworking/*","KVAFNetworking/Cache/*","KVAFNetworking/RequestManager/*","KVAFNetworking/Vendor/*”, ,"KVAFNetworking/Vendor/AFNetworking/*”, ,"KVAFNetworking/Vendor/UIKit+AFNetworking/*”
+
+  s.frameworks = 'Foundation', 'UIKit'
+
+  s.dependency 'AFNetworking', '~> 3.1.0'
   
   # s.resource_bundles = {
   #   'KVKit' => ['KVKit/Assets/*.png']
   # }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 3.1.0'
 end

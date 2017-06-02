@@ -7,7 +7,7 @@
 //
 
 #import "KVNetworking.h"
-#import "AFNetworking.h"
+#import "KVNetworkHeader.h"
 #import "AFNetworkActivityIndicatorManager.h"
 #import "KVNetworking+RequestManager.h"
 #import "KVCacheManager.h"

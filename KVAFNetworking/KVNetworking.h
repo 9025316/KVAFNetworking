@@ -52,7 +52,7 @@ typedef void(^KVResponseFailBlock)(NSError *error);
 /**
  *  下载进度
  *
- *  @param bytesRead              已下载的大小
+ *  @param bytesRead                 已下载的大小
  *  @param totalBytes                总下载大小
  */
 typedef void (^KVDownloadProgress)(int64_t bytesRead,

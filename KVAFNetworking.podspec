@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true  
   
-  s.source_files = "KVAFNetworking/*","KVAFNetworking/Cache/*","KVAFNetworking/RequestManager/*","KVAFNetworking/Vendor/*”, ,"KVAFNetworking/Vendor/AFNetworking/*”, ,"KVAFNetworking/Vendor/UIKit+AFNetworking/*”
+  s.source_files = "KVAFNetworking/*","KVAFNetworking/Cache/*","KVAFNetworking/RequestManager/*","KVAFNetworking/Vendor/*"
 
   s.frameworks = 'Foundation', 'UIKit'
 
